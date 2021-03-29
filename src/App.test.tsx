@@ -3,7 +3,7 @@ import {render, screen} from '@testing-library/react';
 import App from './App';
 
 test('renders Feedback form', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Feedback/i);
+  const {container} = render(<App />);
+  const linkElement = container.querySelector('form');
   expect(linkElement).toBeInTheDocument();
 });

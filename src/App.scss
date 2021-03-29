@@ -33,6 +33,11 @@ body {
       width: 100%;
       display: flex;
 
+      label {
+        display: flex;
+        flex-shrink: 0;
+      }
+
       textarea {
         resize: none;
       }

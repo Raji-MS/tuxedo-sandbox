@@ -22,6 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "react-scripts lint",
+    "coverage": "react-scripts test --coverage",
     "format": "prettier --write 'src/*.ts' 'src/*.tsx'"
   },
   "devDependencies": {

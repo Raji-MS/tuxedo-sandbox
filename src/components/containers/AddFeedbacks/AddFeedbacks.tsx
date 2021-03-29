@@ -32,7 +32,7 @@ export const AddFeedbacks: FC = () => {
     <div className="container">
       <h2 className="title">{title}</h2>
       <form onSubmit={handleSubmit} method="post">
-        <TextArea variation="primary" name="feedback" onChange={setCommentFromTextArea} value={comment} id="w3review" />
+        <TextArea variation="primary" name="feedback" onChange={setCommentFromTextArea} value={comment} />
         <br />
         <Button label={buttonLabel} variation="primary" type="submit" disabled={comment === ''} />
       </form>

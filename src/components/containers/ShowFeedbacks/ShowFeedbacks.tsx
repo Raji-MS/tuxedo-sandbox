@@ -6,13 +6,13 @@ import {AppContent} from '../../../config';
 export const ShowFeedbacks: FC = () => {
   const {feedbacksLists = null} = useContext(FeedbacksContext);
   const {
-    showFeedbacks: {title}
+    showFeedbacks: {title, noFeedBack}
   } = AppContent;
   return (
     <div className="container">
+      <h2 className="title">{title}</h2>
       {feedbacksLists && feedbacksLists.length ? (
         <>
-          <h2 className="title">{title}</h2>
           <table>
             <tbody>
               {feedbacksLists.map((comment: FeedbackProps) => (
@@ -23,7 +23,9 @@ export const ShowFeedbacks: FC = () => {
             </tbody>
           </table>
         </>
-      ) : null}
+      ) : (
+        <div>{noFeedBack}</div>
+      )}
     </div>
   );
 };

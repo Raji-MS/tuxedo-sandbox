@@ -4,7 +4,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;
   variation: string;
   type: 'button' | 'submit' | 'reset';
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 export const Button: FC<ButtonProps> = (props) => {
