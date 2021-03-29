@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "esbenp.prettier-vscode",
+    "wix.vscode-import-cost",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "sonarsource.sonarlint-vscode",
+    "coenraads.bracket-pair-colorizer",
+    "msjsdiag.debugger-for-chrome",
+    "eamodio.gitlens",
+    "firsttris.vscode-jest-runner",
+    "stevencl.adddoccomments",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "nrwl.angular-console"
+  ]
+}
